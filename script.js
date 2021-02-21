@@ -1,9 +1,9 @@
+var pics = ["nature.jpeg", "nature2.jpg", "nature3.jpg"];
+var counter = 0
 function changePic() {
     var pic = document.querySelector('img');
     console.log(pic.src);
-    if (pic.src == "/img/nature.jpeg") {
-        console.log(pic.src);
-    } else {
-        console.log("src does not match");
-    }
+    index = counter % pics.length;
+    counter += 1;
+    pic.src = "/img/" + pics[index];
 }
