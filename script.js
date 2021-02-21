@@ -1,5 +1,5 @@
 function changePic() {
-    var pic = document.getElementById('img');
+    var pic = document.querySelector('img');
     if (pic.src == "/img/nature.jpeg") {
         console.log(pic.src)
     } else {
